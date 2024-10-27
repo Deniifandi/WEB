@@ -1,0 +1,275 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: gray;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 18px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 10%;
+    background: black;
+}
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+    color: orangered;
+    margin-bottom: -10px;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: orangered;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-img img {
+    border-radius: 50%;
+    max-width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: darkblue;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: red;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    background: gray;
+}
+
+.portfolio-content {
+    text-align: center;
+}
+
+.portfolio-content h2 {
+    font-size: 42px;
+    color: black;
+}
+
+.portfolio-content h3 {
+    font-size: 62px;
+    color: orangered;
+}
+
+.portfolio-content p {
+    font-size: 20px;
+    color: #333;
+    margin: 2em 0 3em;
+}
+
+/* Contact Section */
+.contact-form {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding: 50px 10%;
+    background: rgb(241, 241, 241);
+}
+
+.contact-form h2 {
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 90%;
+    padding: 1.4em;
+    font-size: 10px;
+    color: orangered;
+    background: rgba(241, 241, 241);
+    border-radius: .5rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: blue;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: blue;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
